@@ -58,7 +58,8 @@ services:
         environment:
             - PMA_ARBITRARY=1
     meilisearch:
-        image: 'getmeili/meilisearch:latest'
+        image: 'getmeili/meilisearch:v1.0.2'
+        # image: 'getmeili/meilisearch:latest'
         ports:
             - '${FORWARD_MEILISEARCH_PORT:-7700}:7700'
         volumes:

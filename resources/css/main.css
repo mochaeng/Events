@@ -41,17 +41,17 @@ h1 {
 }
 
 #search-container {
-    background-image: url("../images/sandra.webp");
-    background-size: contain;
+    background-image: url("../images/wallhaven.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     height: 400px;
     padding: 50px;
     text-align: center;
 }
 
 #search-container h1 {
-    color: #24211f;
+    color: #ffffff;
     margin-bottom: 30px;
     font-weight: bold;
     font-size: 40px;

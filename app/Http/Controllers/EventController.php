@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\File;
 
 class EventController extends Controller
 {
-    //
     public function index()
     {
         $search = request('search');
