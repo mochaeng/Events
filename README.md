@@ -37,6 +37,14 @@ cp .env.example .env
 docker-compose down --volumes
 ./vendor/bin/sail up -d --build
 ./vendor/bin/sail php artisan key:generate
+```
+
+##### Database migration
+
+> Wait some time (~10 seconds) to the app fully open, then run:
+
+```sh
+
 ./vendor/bin/sail php artisan migrate
 ```
 
