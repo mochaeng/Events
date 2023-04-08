@@ -20,16 +20,17 @@ class EventController extends Controller
         $events = Event::search($search);
 
         // if ($search) {
-        //     // $events = Event::where([
-        //     //     ['title', 'like', '%' . $search . '%'],
-        //     // ])->get();
+        //     $events = Event::where([
+        //         ['title', 'like', '%' . $search . '%'],
+        //     ])->get();
         //     // $events = Event::search($search)->get();
-        //     $events = Event::search($search);
+        //     // $events = Event::search($search);
         // } else {
         //     // $events = Event::all();
         //     $events = Event::search("");
         // }
 
+        dd($events);
         $events = $events->paginate(10);
         return view('welcome', ['events' => $events, 'search' => $search]);
     }
