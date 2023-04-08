@@ -30,7 +30,6 @@ class EventController extends Controller
         //     $events = Event::search("");
         // }
 
-        dd($events);
         $events = $events->paginate(10);
         return view('welcome', ['events' => $events, 'search' => $search]);
     }
